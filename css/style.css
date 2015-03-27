@@ -1,0 +1,144 @@
+/* style the body */
+body{
+  color:#036;
+  background: #F4B350;
+  font-family: Nunito, Georgia, sans-serif;
+}
+
+/* Style  the parent container */
+#parentContainer
+{
+  max-width: 95%;
+  margin: auto;
+  border: 0px solid black;
+}
+
+/* style the list of contacts div element */
+#listContact{
+  max-width:60%;
+  border:0px solid black;
+  display:inline-block;
+  vertical-align:top;
+  box-sizing: border-box;
+}
+
+/* style the add contact div element */
+#addContact{
+  max-width:37%;
+  border:0px solid black;
+  display:inline-block;
+  margin-left:70px;
+  position:fixed;
+  box-sizing: border-box; 
+}
+
+/* Style the h2 heading tags */
+h2{
+  border-bottom:2px solid #ECECEC;
+  text-align:center;
+  border-radius: 2px;
+}
+
+/*Table styling */
+table{
+  font-size:1.2em;
+  text-align:center;
+  letter-spacing: 0.8px;
+  width: 100%;
+  table-layout:fixed;
+  display:block;
+  border-radius: 10px;
+}
+
+/* style table elements */
+table td,th{
+padding: 7px 30px;
+}
+
+/* style table header */
+th{
+background-color: #333;
+color: #ECECEC;
+}
+
+/* even child elements background color */
+tr:nth-child(even){
+  background-color:#ECECEC;
+  
+}
+/* odd child elements background color */
+tr:nth-child(odd){
+  background-color:white;
+}
+
+/* style the delete button */
+button.delete{
+  border:1px solid #D91E18;
+  border-radius:4px;
+  background-color: #EF4836;
+  padding:8px 20px;
+  color:white;
+  font-family:Nunito;
+  font-size:0.8em;
+  letter-spacing: 0.8px;
+  cursor:pointer;
+  text-align:center;
+}
+
+/* style form elements */
+#new-contact{
+  font-size: 1.2em;
+}
+
+/* the div tag enclosing each input*/
+.form-group{
+padding:10px 10px 30px 0;
+}
+
+/*style the input elements of the form */
+.form-group input{
+  border: 2px solid lightblue;
+  border-radius:5px;
+  padding:4px;
+}
+
+/*selecting only the first 2 input elements of the form and giving them padding */
+.form-group:nth-child(-n+2) input{
+  margin-left:35px;
+}
+
+
+/*styling the submit button*/
+input[type="submit"]{
+  padding: 7px;
+  font: inherit;
+  border: 2px solid green;
+  color: #036;
+  background-color: #87D37C;
+  width:100%;
+  letter-spacing: 0.9px;
+  text-shadow: 1px 1px 3px white;
+  cursor:pointer;
+}
+/*style the error div */
+#error{
+  color:white;
+  padding: 7px;
+  border: 2px solid #D91E18;
+  background-color: #EF4836;
+  border-radius: 5px;
+  margin-bottom:10px;
+  display:none;
+  font-size:0.9em;
+  text-align:center;
+}
+
+/* define breakpoint for addContact div*/
+@media all and (max-width: 1020px){
+  #addContact{
+    display:block;
+    position:absolute;
+    max-width:100%;
+    margin-top: 50px;
+  }
+}
