@@ -3,8 +3,7 @@
 <html lang="en-US">
   <head>
     <?php
-      echo "hello";
-      
+      require "db.php";   
     ?>
     <title>Phone Book Application</title>
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
@@ -36,7 +35,7 @@
       <div id="addContact">
         <h2>Add a Contact</h2>
         <div id="error"></div>
-        <form name="new-contact" method="POST" action="#" id="new-contact">
+        <form name="new-contact" method="POST" action="saveContact.php" id="new-contact">
           <div class="form-group">
             <label for="lastName">Last Name</label>
             <input type="text" id="lastName" name="lastName" required>
@@ -49,7 +48,7 @@
           
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="number" id="phone" name="phone" required>
+            <input type="text" id="phone" name="phone" required>
           </div>
           
           <div class="form-group">

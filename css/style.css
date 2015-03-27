@@ -99,7 +99,11 @@ padding:10px 10px 30px 0;
 .form-group input{
   border: 2px solid lightblue;
   border-radius:5px;
-  padding:4px;
+  padding:5px;
+  color:inherit;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: Nunito, sans-serif, Georgia;
 }
 
 /*selecting only the first 2 input elements of the form and giving them padding */
